@@ -44,19 +44,3 @@ def get_event_matches(event_key):
     data = requests.get(url, params=urlPARAM)
     json = data.json()
     return json
-
-def main():
-    print ("Welcome to 2849's TBA reader:\n Enter the number for what you are interested in:\n1. Team Stats\n2. Team Bio\n3. Event Stats\n4. Event Bio")
-    userSelection = input()
-    if (userSelection == str(1)):
-        key = input('Enter the team number:')
-        pprint (get_team_stats('frc', key))
-    if (userSelection == str(2)):
-        key = 'frc%s' % input('Enter the team number:')
-        pprint (get_team_bio(key))
-    #pprint (test_case('2016vahay'))
-    #pprint (get_event_matches('2016vahay'))
-    #pprint (get_team_stats('frc2849'))
-    #pprint (get_event_teams('2016mdbet'))
-
-main()
