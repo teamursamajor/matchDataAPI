@@ -4,7 +4,7 @@ from pprint import pprint
 from readBA import *
 
 def main():
-	print ("Welcome to 2849's TBA reader:\n Enter the number for what you are interested in:\n1. Team Stats\n2. Team Bio\n3. Event Stat\n4. Event Bio")
+    print ("Welcome to 2849's TBA reader:\n Enter the number for what you are interested in:\n1. Team Stats\n2. Team Bio\n3. Event Stat\n4. Event Bio")
     userSelection = input()
     if (userSelection == str(1)):
         key = input('Enter the team number:')
